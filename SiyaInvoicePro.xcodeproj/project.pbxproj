@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041142792D5DC3DB0057279F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041142782D5DC3DB0057279F /* AppDelegate.swift */; };
+		0411427B2D5DC3DB0057279F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411427A2D5DC3DB0057279F /* SceneDelegate.swift */; };
+		041142822D5DC3DE0057279F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041142812D5DC3DE0057279F /* Assets.xcassets */; };
+		041142852D5DC3DE0057279F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041142832D5DC3DE0057279F /* LaunchScreen.storyboard */; };
+		041142922D5DC60B0057279F /* InvoiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041142912D5DC60B0057279F /* InvoiceItem.swift */; };
+		041142962D5DDB8D0057279F /* Main_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041142952D5DDB8D0057279F /* Main_iPhone_Storyboard.storyboard */; };
+		041142982D5DDBC30057279F /* Main_iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041142972D5DDBC30057279F /* Main_iPad_Storyboard.storyboard */; };
+		0411429C2D5DDDD30057279F /* InvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411429B2D5DDDD30057279F /* InvoiceViewController.swift */; };
+		04378DE62D5F429C00D2A217 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DE52D5F429C00D2A217 /* CoreDataManager.swift */; };
+		04378DE92D5F42FD00D2A217 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04378DE72D5F42FD00D2A217 /* CoreDataModel.xcdatamodeld */; };
+		04378DEC2D5F43D300D2A217 /* InvoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DEB2D5F43D300D2A217 /* InvoiceViewModel.swift */; };
+		04378DF02D5F443400D2A217 /* InvoiceViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DEF2D5F443400D2A217 /* InvoiceViewModelDelegate.swift */; };
+		04378DF22D5F449200D2A217 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DF12D5F449200D2A217 /* CommonFunctions.swift */; };
+		04378DF52D5F450600D2A217 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DF42D5F450600D2A217 /* StringConstants.swift */; };
+		04378DF82D5F459700D2A217 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DF72D5F459700D2A217 /* Extension+Double.swift */; };
+		04378DFA2D5F45AC00D2A217 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DF92D5F45AC00D2A217 /* Extension+String.swift */; };
+		04378DFC2D5F45F100D2A217 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04378DFB2D5F45F100D2A217 /* LogService.swift */; };
+		049CD3562D5E033C00EC7179 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD3552D5E033C00EC7179 /* AddItemViewController.swift */; };
+		049CD3582D5E0C6A00EC7179 /* InvoiceItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049CD3572D5E0C6A00EC7179 /* InvoiceItemCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041142752D5DC3DB0057279F /* SiyaInvoicePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiyaInvoicePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041142782D5DC3DB0057279F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0411427A2D5DC3DB0057279F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		041142812D5DC3DE0057279F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041142842D5DC3DE0057279F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041142862D5DC3DE0057279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041142912D5DC60B0057279F /* InvoiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItem.swift; sourceTree = "<group>"; };
+		041142952D5DDB8D0057279F /* Main_iPhone_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPhone_Storyboard.storyboard; sourceTree = "<group>"; };
+		041142972D5DDBC30057279F /* Main_iPad_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPad_Storyboard.storyboard; sourceTree = "<group>"; };
+		0411429B2D5DDDD30057279F /* InvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceViewController.swift; sourceTree = "<group>"; };
+		04378DE52D5F429C00D2A217 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		04378DE82D5F42FD00D2A217 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		04378DEB2D5F43D300D2A217 /* InvoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceViewModel.swift; sourceTree = "<group>"; };
+		04378DEF2D5F443400D2A217 /* InvoiceViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceViewModelDelegate.swift; sourceTree = "<group>"; };
+		04378DF12D5F449200D2A217 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		04378DF42D5F450600D2A217 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		04378DF72D5F459700D2A217 /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
+		04378DF92D5F45AC00D2A217 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		04378DFB2D5F45F100D2A217 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		049CD3552D5E033C00EC7179 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		049CD3572D5E0C6A00EC7179 /* InvoiceItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItemCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041142722D5DC3DB0057279F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0411426C2D5DC3DB0057279F = {
+			isa = PBXGroup;
+			children = (
+				041142772D5DC3DB0057279F /* SiyaInvoicePro */,
+				041142762D5DC3DB0057279F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041142762D5DC3DB0057279F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041142752D5DC3DB0057279F /* SiyaInvoicePro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041142772D5DC3DB0057279F /* SiyaInvoicePro */ = {
+			isa = PBXGroup;
+			children = (
+				0411428C2D5DC3FC0057279F /* Delegate */,
+				04378DED2D5F440900D2A217 /* Utils */,
+				04378DEA2D5F43AC00D2A217 /* View Models */,
+				0411428E2D5DC4290057279F /* Invoice Model */,
+				04378DE42D5F427200D2A217 /* Database */,
+				041142902D5DC4CD0057279F /* InvoiceItemTableViewCell */,
+				0411428F2D5DC4470057279F /* InvoiceViewController */,
+				0411429A2D5DDBDC0057279F /* MainStoryboard */,
+				041142832D5DC3DE0057279F /* LaunchScreen.storyboard */,
+				041142812D5DC3DE0057279F /* Assets.xcassets */,
+				041142862D5DC3DE0057279F /* Info.plist */,
+				04378DE72D5F42FD00D2A217 /* CoreDataModel.xcdatamodeld */,
+			);
+			path = SiyaInvoicePro;
+			sourceTree = "<group>";
+		};
+		0411428C2D5DC3FC0057279F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				041142782D5DC3DB0057279F /* AppDelegate.swift */,
+				0411427A2D5DC3DB0057279F /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0411428E2D5DC4290057279F /* Invoice Model */ = {
+			isa = PBXGroup;
+			children = (
+				041142912D5DC60B0057279F /* InvoiceItem.swift */,
+			);
+			path = "Invoice Model";
+			sourceTree = "<group>";
+		};
+		0411428F2D5DC4470057279F /* InvoiceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0411429B2D5DDDD30057279F /* InvoiceViewController.swift */,
+				049CD3552D5E033C00EC7179 /* AddItemViewController.swift */,
+			);
+			path = InvoiceViewController;
+			sourceTree = "<group>";
+		};
+		041142902D5DC4CD0057279F /* InvoiceItemTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				049CD3572D5E0C6A00EC7179 /* InvoiceItemCell.swift */,
+			);
+			path = InvoiceItemTableViewCell;
+			sourceTree = "<group>";
+		};
+		0411429A2D5DDBDC0057279F /* MainStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				041142972D5DDBC30057279F /* Main_iPad_Storyboard.storyboard */,
+				041142952D5DDB8D0057279F /* Main_iPhone_Storyboard.storyboard */,
+			);
+			path = MainStoryboard;
+			sourceTree = "<group>";
+		};
+		04378DE42D5F427200D2A217 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				04378DE52D5F429C00D2A217 /* CoreDataManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		04378DEA2D5F43AC00D2A217 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				04378DEB2D5F43D300D2A217 /* InvoiceViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		04378DED2D5F440900D2A217 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04378DEE2D5F441700D2A217 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04378DEE2D5F441700D2A217 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04378DEF2D5F443400D2A217 /* InvoiceViewModelDelegate.swift */,
+				04378DF12D5F449200D2A217 /* CommonFunctions.swift */,
+				04378DF32D5F44D000D2A217 /* Constants */,
+				04378DF62D5F455400D2A217 /* Extensions */,
+				04378DFB2D5F45F100D2A217 /* LogService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04378DF32D5F44D000D2A217 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				04378DF42D5F450600D2A217 /* StringConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		04378DF62D5F455400D2A217 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04378DF72D5F459700D2A217 /* Extension+Double.swift */,
+				04378DF92D5F45AC00D2A217 /* Extension+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041142742D5DC3DB0057279F /* SiyaInvoicePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041142892D5DC3DE0057279F /* Build configuration list for PBXNativeTarget "SiyaInvoicePro" */;
+			buildPhases = (
+				041142712D5DC3DB0057279F /* Sources */,
+				041142722D5DC3DB0057279F /* Frameworks */,
+				041142732D5DC3DB0057279F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiyaInvoicePro;
+			productName = SiyaInvoicePro;
+			productReference = 041142752D5DC3DB0057279F /* SiyaInvoicePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0411426D2D5DC3DB0057279F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					041142742D5DC3DB0057279F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 041142702D5DC3DB0057279F /* Build configuration list for PBXProject "SiyaInvoicePro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0411426C2D5DC3DB0057279F;
+			productRefGroup = 041142762D5DC3DB0057279F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041142742D5DC3DB0057279F /* SiyaInvoicePro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041142732D5DC3DB0057279F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041142982D5DDBC30057279F /* Main_iPad_Storyboard.storyboard in Resources */,
+				041142852D5DC3DE0057279F /* LaunchScreen.storyboard in Resources */,
+				041142962D5DDB8D0057279F /* Main_iPhone_Storyboard.storyboard in Resources */,
+				041142822D5DC3DE0057279F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041142712D5DC3DB0057279F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049CD3562D5E033C00EC7179 /* AddItemViewController.swift in Sources */,
+				041142922D5DC60B0057279F /* InvoiceItem.swift in Sources */,
+				049CD3582D5E0C6A00EC7179 /* InvoiceItemCell.swift in Sources */,
+				041142792D5DC3DB0057279F /* AppDelegate.swift in Sources */,
+				04378DF82D5F459700D2A217 /* Extension+Double.swift in Sources */,
+				0411429C2D5DDDD30057279F /* InvoiceViewController.swift in Sources */,
+				04378DEC2D5F43D300D2A217 /* InvoiceViewModel.swift in Sources */,
+				04378DE62D5F429C00D2A217 /* CoreDataManager.swift in Sources */,
+				04378DFA2D5F45AC00D2A217 /* Extension+String.swift in Sources */,
+				04378DE92D5F42FD00D2A217 /* CoreDataModel.xcdatamodeld in Sources */,
+				04378DFC2D5F45F100D2A217 /* LogService.swift in Sources */,
+				04378DF52D5F450600D2A217 /* StringConstants.swift in Sources */,
+				0411427B2D5DC3DB0057279F /* SceneDelegate.swift in Sources */,
+				04378DF22D5F449200D2A217 /* CommonFunctions.swift in Sources */,
+				04378DF02D5F443400D2A217 /* InvoiceViewModelDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		041142832D5DC3DE0057279F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041142842D5DC3DE0057279F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041142872D5DC3DE0057279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041142882D5DC3DE0057279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0411428A2D5DC3DE0057279F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiyaInvoicePro/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = umesh.kundgar.SiyaInvoicePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0411428B2D5DC3DE0057279F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiyaInvoicePro/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = umesh.kundgar.SiyaInvoicePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041142702D5DC3DB0057279F /* Build configuration list for PBXProject "SiyaInvoicePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041142872D5DC3DE0057279F /* Debug */,
+				041142882D5DC3DE0057279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041142892D5DC3DE0057279F /* Build configuration list for PBXNativeTarget "SiyaInvoicePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0411428A2D5DC3DE0057279F /* Debug */,
+				0411428B2D5DC3DE0057279F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04378DE72D5F42FD00D2A217 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04378DE82D5F42FD00D2A217 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 04378DE82D5F42FD00D2A217 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0411426D2D5DC3DB0057279F /* Project object */;
+}
